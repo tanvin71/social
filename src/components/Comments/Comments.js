@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -34,10 +33,8 @@ const useStyles = makeStyles((theme) => ({
   }));
 const Comments = (props) => {
     const classes = useStyles();
-    
     const {name, email, body, picture }= props.comment
-    // const {picture.large} = props.commentor
-    
+
     return (
         
         <div className={classes.root}>

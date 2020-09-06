@@ -1,5 +1,4 @@
 import React from 'react';
-// import classes from '*.module.css';
 
 const Header = () => {
     const headerStyle  ={

@@ -21,9 +21,6 @@ function App() {
           <Route path="/post/:postId">
             <PostDetail></PostDetail>
           </Route>
-          <Route path="/post/postId/:=postId">
-            <Comments></Comments>
-          </Route>
           <Route exact path="/">
             <Home></Home>
           </Route>

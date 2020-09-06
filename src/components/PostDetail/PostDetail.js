@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import Button from '@material-ui/core/Button';
 import Comments from '../Comments/Comments';
 
 const PostDetail = () => {
@@ -24,8 +22,8 @@ const PostDetail = () => {
                 const url = `https://randomuser.me/api/?results=15`;
                 fetch(url)
                 .then(res => res.json())
-                .then(randomdata => {
-                    const rdm = randomdata.results;
+                .then(randomData => {
+                    const rdm = randomData.results;
                     const abc = data.map((element, index) =>{
                         element.picture = rdm[index].picture.large;
                         return element

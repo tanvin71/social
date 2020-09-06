@@ -32,8 +32,7 @@ const useStyles = makeStyles({
 
 const Post = (props) => {
     const {title, body,id } = props.post
-    console.log(props)
-    
+
     const mar ={
         marginBottom: '10px',
         marginTop:  '10px',
@@ -47,14 +46,14 @@ const Post = (props) => {
             <Card className={classes.root}>
             <CardContent>
             <Typography className={classes.title} color="textSecondary" gutterBottom>
-               <h1>Id: {id}</h1>
+               <h4>Id: {id}</h4>
             </Typography>
             <Typography className={classes.title} color="textPrimary" gutterBottom>
-              <h1>{title}</h1>
+              <h1>Title: {title}</h1>
             </Typography>
             
             <Typography variant="body2" component="p">
-                <h4>{body}</h4>
+                <h4>Main body: {body}</h4>
                 <br />
             </Typography>
             </CardContent>
