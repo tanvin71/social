@@ -23,12 +23,12 @@ const PostDetail = () => {
                 fetch(url)
                 .then(res => res.json())
                 .then(randomData => {
-                    const rdm = randomData.results;
-                    const abc = data.map((element, index) =>{
-                        element.picture = rdm[index].picture.large;
+                    const data = randomData.results;
+                    const addNew = data.map((element, index) =>{
+                        element.picture = data[index].picture.large;
                         return element
                     })
-                    setComments(abc)
+                    setComments(addNew)
                 })
                 
                 console.log(data)})
