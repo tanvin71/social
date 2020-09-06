@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 
+
 const useStyles = makeStyles({
     root: {
       margin:'auto',
@@ -58,7 +59,7 @@ const Post = (props) => {
             </Typography>
             </CardContent>
             <CardActions>
-              <Button variant="contained" color="secondary" outline="none"><Link to={`/post/${id}`}>Read detail</Link></Button>
+              <Button variant="outlined" color="secondary" outline="none"><Link to={`/post/${id}`}>Read detail</Link></Button>
             </CardActions>
             </Card>
         </div>
