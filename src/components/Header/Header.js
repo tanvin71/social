@@ -5,7 +5,7 @@ const Header = () => {
         background:'#ecf0f1',
         width: '80%,',
         margin: 'auto',
-        padding: '20px',
+        padding: '10px',
         textAlign:'center',
     }
     return (
